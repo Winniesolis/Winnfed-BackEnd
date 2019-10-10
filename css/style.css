@@ -1,0 +1,562 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Gayathri|Lato|Open+Sans&display=swap');
+
+
+
+
+/* FONTS */
+
+
+
+body {
+    overflow-x: hidden;
+}
+.btn-none{
+    display: none;
+}
+.active{
+    background: RGBA(46,204,113,0.44);
+
+}
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    background: url(../img/bg1.2.jpg)
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .dnb {
+        display: block !important;
+    }
+}
+
+
+/* winnie */
+
+.dnb {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: #0CC1DA;
+    position: relative;
+    padding-top: 10px;
+}
+
+.btn-menu {
+    margin-left: 8px;
+
+}
+
+.btn-sdw{
+    color:#fff;
+    background-color:#2ECC71;
+    border-color:#58D68D;
+}
+
+.btn-sdw:hover{
+    color: #ffffff;
+    background: #3498DB;
+}
+
+.list-group {
+    margin-top: 40px;
+}
+
+.list-group a {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.list-group a:hover {
+    background: RGBA(46,204,113,0.44);
+    color: #ffffff;
+}
+
+.list-group a i {
+    width: 40px;
+    font-size: 25px;
+    padding: 10px 0px;
+    color: #ffffff;
+
+}
+
+.dropdown-menu {
+    background: #07a0f8;
+}
+
+.img-men {
+    width: 241px;
+}
+
+.img-men img {
+    width: 60%;
+    margin: 10px 0px;
+}
+
+.mn-user h4,
+.mn-user a {
+    display: inline-block;
+}
+
+.mn-user {
+    border-bottom: 2px solid #000000;
+}
+
+.mn-user img {
+    width: 40%;
+    margin: 20px 0px 0px 0px;
+}
+
+.mn-user h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.mn-user a i {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #000000;
+}
+
+.mn-user a i:hover {
+    font-size: 20px;
+    margin-left: 10px;
+    color: red;
+}
+
+
+/* **********************************CLIENTES******************************************** */
+.header-client .col-xl-12 {
+    padding: 0px;
+}
+
+.content-client i,
+.content-client h4 {
+    display: inline-block;
+    padding: 10px 0px 0px 0px;
+}
+
+.content-client i {
+    font-size: 30px;
+    margin: 15px 20px;
+}
+
+.content-client h4 {
+    font-family: 'Gayathri', sans-serif;
+}
+
+.view-client {
+    text-align: right;
+}
+
+.view-client i,
+.view-client a {
+    display: inline-block;
+}
+
+.view-client a {
+    margin-right: 20px;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.view-client a:hover {
+    color: #000000;
+}
+
+/* *********FORM************* */
+.content-client form span {
+    color: red;
+}
+
+.content-client form label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    width: 300px;
+    text-align: left !important;
+    vertical-align:top;
+}
+
+.content-client form textarea{
+    vertical-align:top;
+    background: rgb(235, 233, 233);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px 0px 10px;
+
+}
+
+.form-group input {
+    width: 300px;
+    background: rgb(235, 233, 233);
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.content-client form select {
+    width: 320px;
+    background: rgb(235, 233, 233);
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.content-client form select:focus,
+.content-client form input:focus {
+    border: 1px solid #07a0f8;
+}
+
+/* *********Boton de la combo******* */
+
+.caja {
+    height: 35px;
+    width: 298px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.caja::after {
+    content: "\025be";
+    display: table-cell;
+    text-align: center;
+    padding-top: 7px;
+    width: 40px;
+    height: 35px;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    pointer-events: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* *********Boton de la combo******* */
+.botones button,
+.botones input {
+    font-family: 'Lato', sans-serif;
+    width: 150px;
+    height: 50px;
+    margin: 30px;
+    border-radius: 25px;
+    border: none;
+}
+
+.botones button {
+    background: rgb(235, 233, 233);
+}
+
+.botones input {
+    background: #07a0f8;
+    color: #ffffff;
+}
+
+.botones button:hover {
+    color: #ffffff;
+    background: #EF150F;
+}
+
+.botones input:hover {
+    background: #2ECC71;
+}
+
+.Tcliente{
+    margin-top: 80px;
+}
+
+/* *********BOTONES ************* */
+
+.btnedit{
+    padding: 10px 20px;
+    background: #2ECC71;
+    color: #ffffff;
+    text-decoration: none !important;
+    border-radius: 10px;
+}
+.btnedit:hover{
+    Background: rgb(235, 233, 233);
+}
+.btnelim{
+    padding: 10px 15px;
+    background: #FF586B;
+    color: #ffffff;
+    text-decoration: none !important;
+    border-radius: 10px;
+}
+.btnelim:hover{
+    Background: rgb(235, 233, 233);
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 1460px){
+    .btnelim, .btnedit {
+        padding: 5px 5px;
+        font-size: 16px;
+    }
+}
+/* MEDIA QUERY */
+
+/* ********* END BOTONES ************* */
+
+
+/* *********FORM************* */
+
+
+
+
+
+
+/* *****************MEDIA QUERYS CLIENTES****************** */
+@media (max-width: 1004px){
+    .content-client form label{
+        font-size: 20px;
+        width: 150px;
+    }
+}
+@media (max-width: 950px){
+    .view-client a {
+        margin-right: 10px;
+    }
+    
+    /* .form-group{
+        margin-top: 30px;
+    }
+    .form-group input ,.form-group .caja {
+        width: 250px;
+    } */
+    
+}
+@media (max-width: 876px){
+    .content-client form label {
+        width: 315px;
+    }
+}
+@media (max-width: 767px){
+    .mt-767-40{
+        margin-top: 40px;
+    }
+}
+@media (max-width: 767px){
+    .content-client form label {
+        width: 250px;
+    }
+}
+@media (max-width: 582px){
+    .content-client form label {
+        width: 300px;
+    }
+}
+@media (max-width: 329px){
+    .header-client h4{
+        font-size: 1.3rem;
+    }
+    .form-group input ,.form-group .caja, textarea {
+        width: 240px;
+    }
+    .botones button, .botones input {
+        margin: 50px 8px 50px 8px;
+    }
+}
+
+/* *****************MEDIA QUERYS CLIENTES****************** */
+
+/* ********************************** USUARIOS ******************************************** */
+
+.cont-img{
+    background: #ffffff;
+    width: 200px;
+    height: 150px;
+    border: 10px solid #d9d9d9;
+}
+.cont-img i{
+    width: 50px;
+    height: 60px;
+    font-size: 50px;
+    margin: 15% 35%;
+}
+/* ********************************** END USUARIOS******************************************** */
+/* ********************************** DOCUMENTACION ******************************************** */
+.btn_cot{
+    background: #009DA0;
+}
+.btn_not{
+    background: #FF8D60;
+}
+.btn_prec{
+    background: #FF586B;
+}
+.btn_cot, .btn_not, .btn_prec{
+    color: #ffffff;
+    width: 80%;
+    height: 100px;
+    margin: 50px 0px;
+    border-radius: 20px;
+    font-size: 25px;
+    padding-top: 35px;
+    font-family: 'Gayathri', sans-serif;
+}
+.mt-150{
+    margin-top: 150px;
+}
+.btn_cot:hover, .btn_not:hover, .btn_prec:hover{
+    background: #3498DB;
+    color: #ffffff;
+}
+.arrow-left i{
+    font-size: 40px;
+}
+/* ********************************** END DOCUMENTACION ******************************************** */
+
+
+
+/* **********************************NOTAS******************************************** */
+.container-form .btn-success{
+    width: 25%;
+    height: 60px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/* ********************************** END NOTAS ******************************************** */
+
+/* ********************************** END CLIENTES******************************************** */
+
+@media (max-width: 1605px){
+    .mt-1605-1{
+        margin-top: 0.25em;
+    }
+    .btn-table .btn-success{
+        padding: .375rem 1.2rem;
+    }
+    table td .btn-info{
+        margin-top: 8px;
+        padding: .30rem 0.30rem;
+    }
+}
+
+/* *********************FOTO PRODUCTOS********************** */
+.lb-ft{
+    font-family: 'Gayathri', sans-serif;
+    font-size: 20px;
+}
+.prevPhoto {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    height: 150px;
+    border: 1px solid #CCC;
+    position: relative;
+    cursor: pointer;
+    background: url(../images/uploads/user.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+}
+.prevPhoto label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.prevPhoto img{
+	width: 100%;
+	height: 100%;
+}
+.upimg, .notBlock{
+	display: none !important;
+}
+.errorArchivo{
+	font-size: 16px;
+	font-family: arial;
+	color: #cc0000;
+	text-align: center;
+	font-weight: bold; 
+	margin-top: 10px;
+}
+.delPhoto{
+	color: #ffffff !important;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background: red;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+    z-index: 10;
+    font-weight: bold;
+}
+#tbl_list_productos img{
+	width: 50px;
+}
+.imgProductoDelete{
+	width: 175px;
+}
+/* ********************* END FOTO PRODUCTOS********************** */
